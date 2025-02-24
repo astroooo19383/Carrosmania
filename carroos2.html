@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Carros Incríveis</title> 
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .carro-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Ajuste para espaçamento uniforme */
+        }
+        .carro {
+            width: 300px; 
+            height: 400px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .carro img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .carro:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            background: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #e63e00;
+        }
+    </style> 
+ <style type="text/css" id="dcoder_stylesheet">/* Animação suave ao passar o mouse nos cards */
+.carro {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.carro:hover {
+    transform: scale(1.05); /* Aumenta um pouco o card */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação nos botões */
+button {
+    transition: background 0.3s, transform 0.2s;
+    margin-top: auto; /* Faz o botão ir para a parte inferior do card */
+}
+
+button:hover {
+    background: #e63e00; /* Muda a cor suavemente */
+    transform: scale(1.1); /* Faz o botão crescer um pouco */
+}
+
+/* Efeito de zoom suave nas imagens */
+.carro img {
+    background: none; /* Garante que a imagem não tenha fundo extra */
+    display: block; /* Remove espaçamentos extras invisíveis */
+}
+.carro img:hover {
+    transform: scale(1.1); /* Aumenta levemente a imagem */
+}
+
+/* Configuração dos cards */
+.carro {
+    background: transparent; /* Remove o fundo branco do card */
+    box-shadow: none; /* Remove a sombra se necessário */
+    color: white;
+}
+
+/* Ajuste do GMC Hummer EV */
+.carro:last-child {
+    margin-top: 0px; /* Separa o GMC Hummer EV */
+}
+
+/* Centralizando os cards */
+.carro-container {
+    display: flex;
+    flex-wrap: wrap; /* Mantém os carros alinhados */
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+/* Correção do elemento pai */
+.pai {
+    background-color: FF4500; /* Define um fundo cinza para o elemento pai */
+    padding: 00px; /* Adiciona espaçamento interno */
+}
+
+/* Ajuste no botão dentro do pai */
+.filho {
+    background-color: #FF4500; /* Fundo laranja */
+    color: white; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Ajuste de espaçamento entre cards específicos */
+.carro:nth-child(1),
+.carro:nth-child(2),
+.carro:nth-child(3) {
+    margin-bottom: 0 !important;
+}</style></head> 
+ <body> 
+  <h1>🚗 Carros Incríveis 🚗</h1> 
+  <div class="carro-container"> 
+   <div class="carro"> 
+    <img src="https://i.postimg.cc/k42brJk4/gmcwh2035-pg020-mdv-1ed48-1lt-lhd-gb8.png" alt="Chevrolet Onix"> 
+    <h2>Chevrolet Onix</h2> 
+    <p>Motor 1.0 Flex, econômico e confortável.</p> <button onclick="mostrarDetalhes('Chevrolet Onix: Consumo médio de 14km/l na cidade.')">Mais detalhes</button> 
+   </div> 
+   <div class="carro"> 
+    <img src="https://i.postimg.cc/DzHqw4Qs/comprar-drive-1-3-manual-8b7fde59ea.png" alt="Fiat Pulse"> 
+    <h2>Fiat Pulse</h2> 
+    <p>Design moderno e ótimo desempenho.</p> <button onclick="mostrarDetalhes('Fiat Pulse: Motor 1.3 com 107cv de potência.')">Mais detalhes</button> 
+   </div> 
+   <div class="carro"> 
+    <img src="https://i.postimg.cc/bwvb093k/2024-hummer-ev-suv-edition1-moonshot-metallic-g7w.png" alt="GMC Hummer EV"> 
+    <h2>GMC Hummer EV</h2> 
+    <p>Potência impressionante e tecnologia avançada.</p> <button onclick="mostrarDetalhes('GMC Hummer EV: Motor elétrico com mais de 1.000 cavalos de potência!')">Mais detalhes</button> 
+   </div> 
+  </div> 
+  <script>
+        function mostrarDetalhes(mensagem) {
+            alert(mensagem);
+        }
+    </script> 
+  <div class="pai"> 
+   <div class="filho">
+     Texto original 
+   </div> <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjCStB6k4o?si=rwDnfYMvkcQRj6YC&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+  </div>
+ 
+<script type="text/javascript" id="dcoder_script">const pai = document.querySelector(".pai");
+const filho = document.querySelector(".filho");
+
+if (pai && filho) { // Verifica se os elementos existem antes de modificá-los
+    pai.style.border = "0px solid red"; 
+    filho.innerText = "Calma ai paizão!";
+}</script></body></html>
